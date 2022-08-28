@@ -1,0 +1,22 @@
+.content{
+	 position: relative;
+      min-height: 100%;
+    background: #D7D4F8;
+    margin: 40pt;
+    padding: 20pt;
+    border: 2px solid #a496f2;
+}
+p {
+font-size: 14pt;
+
+}
+.p_head{
+    font-size: 16pt;
+    font-weight: bold;
+
+}
+
+p {
+font-size: 14pt;
+}
+

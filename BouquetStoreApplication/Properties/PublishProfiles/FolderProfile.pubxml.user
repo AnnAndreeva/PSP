@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\ReleaseAPP</_PublishTargetUrl>
+    <History>True|2022-03-29T05:22:00.3018331Z;True|2022-03-29T08:16:13.2844506+04:00;True|2022-03-29T07:54:38.4584269+04:00;True|2022-03-28T17:14:16.9126541+04:00;True|2022-03-28T17:13:44.5385221+04:00;True|2022-03-28T17:01:28.8883836+04:00;True|2022-03-28T16:45:00.4169673+04:00;True|2022-03-28T16:27:57.3876680+04:00;True|2022-03-28T16:01:26.8874172+04:00;True|2022-03-28T15:48:05.2059426+04:00;True|2022-03-28T15:44:17.9920557+04:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="db">
+      <Value>workstation id=BouquetsStore.mssql.somee.com%3bpacket size=4096%3buser id=AnnAndreeva21_SQLLogin_1%3bpwd=wu4nlz3pid%3bdata source=BouquetsStore.mssql.somee.com%3bpersist security info=False%3binitial catalog=BouquetsStore</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

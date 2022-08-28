@@ -1,0 +1,16 @@
+﻿
+@foreach (var b in Model){
+
+    <div class="catalog__col">
+        <!-- Дочерний блок сетки -->
+        <div class="product">
+            <img src="~/images/default.png">
+            <p class="name_bouqet">@b.BouquetName</p>
+            <p>@b.Description</p>
+            <p>Размер: @b.Size</p>
+            <p>Состав: @b.Flowers</p>
+            <p class="price">@b.Price.ToString("# руб")</p>
+            <button style="text-decoration: none; color: black">@Html.ActionLink("Добавить в корзину", "Cart")</button>
+        </div>
+    </div>
+}

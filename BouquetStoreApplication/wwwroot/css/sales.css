@@ -1,0 +1,23 @@
+.content{
+	 position: relative;
+      min-height: 100%;
+}
+p {
+font-size: 14pt;
+}
+
+.content img{
+     display: block;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+#sale1, #sale2{
+
+    height: 100%;
+    width: 80%;
+    background: #D7D4F8;
+    margin: 10pt auto;
+    padding: 20pt;
+    border: 2px solid #a496f2;
+}

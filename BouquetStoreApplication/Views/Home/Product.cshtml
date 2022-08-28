@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Магазин букетов \"Василёк\". Букет.";
+}
+
+<link rel="stylesheet" href="~/css/product.css">
+
+<div class="content">
+    <div class="product_block">
+        <p class="product_name">Букет "Нежность"</p>
+        <div id="zoomer-id" class="zoomer" onmousemove=zoom(event,"http://vasilyokstore.somee.com/images/bouqet1.jpg")>
+                                                                   
+            <img src="~/images/bouqet1.jpg" />
+        </div>
+    </div>
+    <div class="product_block">
+        <p class="product_text">
+            Состав букета: розы, папоротник, рускус.<br>Размер - малый - 7 роз,несколько веток папоротника и рускуса.
+            <br>Сколько простоит свежим? - от 1 до 3 дней.
+            <br>Это самый нежный и романтичный вариант. Их можно подарить на свидании, празднике, да и просто без повода, чтобы оказать внимание любимой.
+        </p>
+    </div>
+    <div class="product_block">
+        <p class="product_price">Цена: 1499р</p>
+        <button>@Html.ActionLink("Добавить в корзину", "Cart")</button>
+    </div>
+</div>

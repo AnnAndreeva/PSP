@@ -1,0 +1,39 @@
+.content{
+    display: inline-block;
+    background: #D7D4F8;
+    margin: 40pt;
+    padding: 20pt;
+    border: 2px solid #a496f2;
+}
+
+.content .product_block{
+    width: calc(100% / 4);
+    float: left;
+    padding: 30pt;
+}
+.product_name{
+    font-size: 16pt;
+    font-weight: bold;
+}
+.product_price, .product_text{
+    font-size: 14pt;
+}
+.zoomer {
+    background-position: 50% 50%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: zoom-in;
+}
+
+.zoomer img:hover {
+    /* скрываем начальное изображение при наведении курсора на блок */
+    opacity: 0;
+}
+
+.zoomer img {
+    transition: opacity .5s;
+    display: block;
+    width: 100%;
+}

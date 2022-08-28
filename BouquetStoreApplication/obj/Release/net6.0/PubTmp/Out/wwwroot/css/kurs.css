@@ -1,0 +1,22 @@
+.content{
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    background: #D7D4F8;
+    margin: 40pt;
+    padding: 20pt;
+    border: 2px solid #a496f2;
+}
+/* внешние границы таблицы серого цвета толщиной 1px */
+table {
+    border: 1px solid black;
+    width: 100%;
+}
+/* границы ячеек первого ряда таблицы */
+th {
+    border: 1px solid black;
+}
+/* границы ячеек тела таблицы */
+td {
+    border: 1px solid black;
+}

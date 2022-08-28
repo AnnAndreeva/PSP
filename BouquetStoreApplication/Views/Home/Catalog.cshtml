@@ -1,0 +1,128 @@
+﻿
+
+<link rel="stylesheet" href="~/css/catalog.css">
+
+@{
+    ViewBag.Title = "Магазин букетов \"Василёк\". Каталог.";
+}
+
+<div class="content">
+    <div class="categories">
+        <p class="categories_sort">Параметры сортировки:</p>
+        <div>
+            <input class="sort_radio" type="radio" name="radio_sort" id="asc" value="asc">
+            <label for="asc">по возрастанию цены</label>
+            <br>
+
+            <input class="sort_radio" type="radio" name="radio_sort" id="desc" value="desc">
+            <label for="desc">по убыванию цены</label>
+            <br>
+
+            <p>От: </p>
+            <input class="price_before" type="text" id="price_before" placeholder="Цена от:">
+            <br>
+            <p>До: </p>
+            <input class="price_after" type="text" id="price_after" placeholder="Цена до:">
+
+        </div>
+        <p class="categories_sort">Фильтрация:</p>
+        <div>
+            <p>по типу цветов:</p>
+            <input id="checktype1" type="checkbox" name="type" value="роза">
+            <label for="checktype1">Роза</label>
+            <br>
+            <input id="checktype2" type="checkbox" name="type" value="хризантема">
+            <label for="checktype2">Хризантема</label>
+            <br>
+            <input id="checktype3" type="checkbox" name="type" value="пион">
+            <label for="checktype3">Пион</label>
+            <br>
+            <input id="checktype4" type="checkbox" name="type" value="лилия">
+            <label for="checktype4">Лилия</label>
+            <br>
+            <input id="checktype5" type="checkbox" name="type" value="гиацинт">
+            <label for="checktype5">Гиацинт</label>
+            <br>
+            <input id="checktype6" type="checkbox" name="type" value="гипсофила">
+            <label for="checktype6">Гипсофила</label>
+            <br>
+            <input id="checktype7" type="checkbox" name="type" value="тюльпан">
+            <label for="checktype7">Тюльпан</label>
+            <br>
+            <p>по размеру букета:</p>
+            <input id="checksize1" type="checkbox" name="size" value="малый">
+            <label for="checksize1">Малый(от 1 до 9 цветов)</label>
+            <br>
+            <input id="checksize2" type="checkbox" name="size" value="средний">
+            <label for="checksize2">Средний(от 11 до 25 цветов)</label>
+            <br>
+            <input id="checksize3" type="checkbox" name="size" value="крупный">
+            <label for="checksize3">Крупный(более 27 цветов)</label>
+            <br>
+        </div>
+        <button onclick="filters()">Применить</button>
+        <br>
+        <button onclick="openAddForm()">Добавить букет</button>
+    </div>
+
+    <div class="section">
+        <input class="search" type="text" placeholder="Поиск товара" onkeyup="smartSearch(this.value)" id="smart-search">
+        <div class="search-res" id="search-res"></div>
+        <!-- Основная секция -->
+        <div class="container">
+            <!-- Основной контейнер -->
+            <div class="catalog">
+                <!-- Блок каталога -->
+                <div class="catalog__flex" id="prodlist">
+                    <!-- Родитеский блок сетки -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-popup" id="myAddForm">
+        <form action="" name="form2" class="form-container" onsubmit="return checkAddForm(event);">
+            <p>Добавление букета</p>
+            <label for="name_Add"><b>Название букета</b></label>
+            <input type="text" placeholder="Название букета" name="name_Add" id="name_Add">
+
+            <label for="size_Add"><b>Размер букета</b></label>
+            <select name="size_Add" id="size_Add">
+                <option value="малый">Малый(от 1 до 9 цветов)</option>
+                <option value="средний">Средний(от 11 до 25 цветов)</option>
+                <option value="крупный">Крупный(более 27 цветов)</option>
+            </select>
+
+            <label for="flowers_Add"><b>Cостав букета</b></label>
+            <br>
+            <label style="color: gray;"><b>(для выбора нескольких видов цветов удерживайте клавишу CTRL)</b></label>
+            <select id="flowers_Add" name="flowers_Add[]" multiple>
+                <option value="роза">Роза</option>
+                <option value="хризантема">Хризантема</option>
+                <option value="пион">Пион</option>
+                <option value="лилия">Лилия</option>
+                <option value="гиацинт">Гиацинт</option>
+                <option value="гипсофила">Гипсофила</option>
+                <option value="тюльпан">Тюльпан</option>
+            </select>
+
+            <label for="price_Add"><b>Цена букета</b></label>
+            <input type="number" placeholder="Цена букета" name="price_Add" id="price_Add">
+            <label for="description_Add"><b>Описание букета:</b></label>
+            <input type="text" placeholder="Описание" name="description_Add" id="description_Add">
+            <button type="submit" class="btn">Добавить товар</button>
+            <button type="button" class="btn cancel" onclick="closeAddForm()">Закрыть</button>
+        </form>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+

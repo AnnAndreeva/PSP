@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Магазин букетов \"Василёк\". Корзина.";
+}
+
+<link rel="stylesheet" href="~/css/cart.css">
+<div class="content">
+    <div class="title">
+        Корзина
+    </div>
+    <div class="item">
+        <img src="~/images/bouqet1.jpg" alt="" />
+        <div class="description">
+            <p>Букет "Нежность"</p>
+            <p>Состав: розы, папоротник, рускус.</p>
+        </div>
+        <div class="price">1499р</div>
+        <button class="delete-btn">Удалить из корзины</button>
+    </div>
+
+    <div class="item">
+        <img src="~/images/bouqet2.jpg" alt="" />
+        <div class="description">
+            <p>Букет "Виола"</p>
+            <p>Состав: хризантемы.</p>
+        </div>
+        <div class="price">1999р</div>
+        <button class="delete-btn">Удалить из корзины</button>
+    </div>
+    <br>
+    <button class="order-btn" onclick="openForm()">Оформить заказ</button>
+</div>
+<div class="form-popup" id="myForm">
+    <form action="" name="form1" class="form-container" onsubmit="return checkForm()">
+        <p>Оформление заказа</p>
+        <label for="namef"><b>Имя</b></label>
+        <input type="text" placeholder="Ваше имя" name="namef" id="namef">
+        <label for="surname"><b>Фамилия</b></label>
+        <input type="text" placeholder="Ваша фамилия" name="surname" id="surname">
+        <label for="email"><b>Эл. почта</b></label>
+        <input type="text" placeholder="Ваша эл. почта" name="email" id="email">
+        <label for="phone"><b>Телефон</b></label>
+        <input type="text" placeholder="Ваш телефон" name="phone" id="phone">
+        <button type="submit" class="btn">Заказать</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+    </form>
+</div>
+
+<script src="~/js/cart.js"></script>

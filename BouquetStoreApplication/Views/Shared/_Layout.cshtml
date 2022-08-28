@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="~/css/main.css">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>   
+
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_block">
+            <div class="row">
+                <a href="/Home/Main_page"><img class="logo" src="~/images/logo.png"></a>
+                <a href="/Home/Main_page"><p class="logo_a">Магазин букетов "Василёк"</p></a>
+            </div>
+            <div class="row">
+                <p style="font-size:14pt;">
+                    Контактные данные:<br>Адрес: г. Самара, ул. Ленинградская, д.17<br>Телефон: 8(901)***-**-**<br>Часы
+                    работы: с 9-00 до 21-00
+                </p>
+            </div>
+            <div class="row">
+                <a href="/Home/Cart"><img class="cart_img" src="~/images/cart.png"></a>
+                <a href="/Home/Cart">Корзина</a>
+            </div>
+        </div>
+
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="/Home/About">О нас</a></li>
+                <li><a href="/Home/Blog">Статьи</a></li>
+                <li><a href="/Home/Sales">Акции</a></li>
+                <li><a href="/Home/Catalog">Каталог</a></li>
+                <li><a href="/Home/Pay">Оплата</a></li>
+                <li><a href="/Home/Delivery">Доставка</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        @RenderBody()
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer_block">
+            <div class="row">
+                <a href="/Home/Main_page"><img class="logo" src="~/images/logo.png"></a>
+                <a href="/Home/Main_page"><p>Магазин букетов "Василёк"</p></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="/Home/About">О нас</a></li>
+                    <li><a href="/Home/Blog">Статьи</a></li>
+                    <li><a href="/Home/Sales">Акции</a></li>
+                    <li><a href="/Home/List">Каталог</a></li>
+                    <li><a href="/Home/Pay">Оплата</a></li>
+                    <li><a href="/Home/Delivery">Доставка</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <p style="font-size:14pt;">
+                    Контактные данные:<br>Адрес: г. Самара, ул. Ленинградская, д.17<br>Телефон:
+                    8(901)***-**-**<br>Часы работы: с 9-00 до 21-00
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="~/js/navbar.js"></script>
+    <script src="~/js/origin_copy.js"></script>
+    <script src="~/js/index.js"></script>
+    <script src="~/js/catalog.js"></script>
+    <script src="~/js/zoom_img.js"></script>
+</body>
+</html>

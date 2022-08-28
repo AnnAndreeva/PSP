@@ -1,0 +1,19 @@
+.content{
+        position: relative;
+        min-height: 100%;
+        display: flex;
+    background: #D7D4F8;
+    margin: 40pt;
+    padding: 20pt;
+    border: 2px solid #a496f2;
+}
+.article_left_block{
+     padding: 20px;
+}
+
+.article_text_block{
+     padding-top: 100px;
+}
+.article_left_block img{
+    width: 100%;
+}

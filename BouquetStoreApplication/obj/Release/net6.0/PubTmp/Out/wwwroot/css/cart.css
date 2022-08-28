@@ -1,0 +1,122 @@
+.content {
+    width: 750px;
+    height: 423px;
+    margin: 80px auto;
+    background: #C3BFF0;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    height: 60px;
+    border-bottom: 1px solid #E1E8EE;
+    padding: 20px 30px;
+    color: black;
+    font-size: 16pt;
+    font-weight: 400;
+}
+
+.item {
+    background: #C3BFF0;
+    padding: 20px 20px;
+    height: 120px;
+    display: flex;
+}
+
+.description {
+    width: 250px;
+}
+
+.delete-btn {
+    display: flex;
+    /*background: #e6e6fa;
+    color: #201a66;
+    border: 2px solid #201a66;*/
+    font-size: 14pt;
+    width: 200px;
+    height: 25px;
+    margin: auto;
+}
+
+.order-btn {
+    font-size: 14pt;
+    /*background: #e6e6fa;
+    color: #201a66;
+    border: 2px solid #201a66;*/
+    width: 750px;
+    height: 25px;
+    margin: auto;
+}
+
+.item img {
+    margin-right: 10px;
+    height: 100%;
+}
+
+.price {
+    display: flex;
+    font-size: 16px;
+    background: #C9DFF7;
+    font-weight: 300;
+    margin: auto;
+    padding: 10px;
+
+}
+
+.form-popup {
+    display: none;
+    content: '';
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 100px;
+    margin: auto;
+}
+
+.form-container {
+    max-width: 800px;
+    padding: 10px;
+    margin-top: 300px;
+    background-color: white;
+    margin: auto;
+    z-index: 20;
+    box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 775px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #a496f2;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-container .cancel {
+    background-color: #cbc3f7;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 0.6;
+}

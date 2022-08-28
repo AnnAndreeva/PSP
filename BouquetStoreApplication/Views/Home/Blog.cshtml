@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Магазин букетов \"Василёк\". Статьи.";
+}
+
+<link rel="stylesheet" href="~/css/blog.css">
+
+<div class="content">
+    <div class="articles">
+        <div id="article1">
+            <img src="~/images/text1.jpg"></img>
+            <h1>Собираем полевой букет</h1>
+            <p>
+                Любите полевые цветы, но не хотите переплачивать за готовый букет? Наше руководство поможет вам
+                собрать идеальный букет из полевых цветов самостоятельно!
+            </p>
+            <button style="text-decoration: none; color: black">@Html.ActionLink("Читать", "Article")</button>
+        </div>
+        <div id="article2">
+            <img src="~/images/text2.jpg">
+            <h1>Топ 5 популярных видов цветов в букетах</h1>
+            <p>
+                Мы составили список тех видов цветов, которые наиболее часто используются в букетах. Узнайте больше о
+                любимых цветах!
+            </p>
+            <button style="text-decoration: none; color: black">@Html.ActionLink("Читать", "Article")</button>
+        </div>
+        <div id="article3">
+            <img src="~/images/text3.jpg">
+            <h1>Букет для первого свидания</h1>
+            <p>
+                Не можете решить, какой букет купить, чтобы порадовать девушку на первом свидании? Эта подборка для
+                вас!
+            </p>
+            <button style="text-decoration: none; color: black">@Html.ActionLink("Читать", "Article")</button>
+        </div>
+    </div>
+</div>

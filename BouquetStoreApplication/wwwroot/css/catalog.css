@@ -1,0 +1,222 @@
+.content {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 90px;
+    display: flex;
+}
+
+.categories {
+    height: 650px;
+    margin-top: 20px;
+    border: 1px black double;
+    width: 20%;
+    padding: 10px;
+}
+
+    .categories li {
+        list-style-type: none;
+    }
+
+    .categories ul {
+        padding-left: 0px;
+    }
+
+.categories_sort {
+    border-top: 1px black double;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.categories_p {
+    text-align: center;
+}
+
+.categories button {
+    width: 100%;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.sort_input {
+    margin-top: 1px;
+    margin-left: 10px;
+    height: 20px;
+    width: 100px;
+}
+
+.sort_radio {
+    margin-top: 1px;
+    margin-left: 25px;
+    height: 20px;
+    width: 20px;
+}
+
+    .sort_radio label {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding-left: 25px;
+        margin-right: 0;
+        line-height: 18px;
+        user-select: none;
+    }
+
+.input {
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 20px;
+    width: 500px;
+}
+
+
+.block1 input {
+    margin-left: 160px;
+}
+
+.section {
+    margin: 10px 0 /* внешние отступы для блока - сверху и снизу по 60px, слева и справа по 0px */;
+    width: 80% /* Задаем ширину блока(по 4 блока в ряд)*/;
+}
+
+.container {
+    max-width: 100% /* максимальная ширина контейнера */;
+    margin: 0 auto /* расположение контейнера по центру */;
+    padding: 0 30px /* внутренние отступы слева и справа по 30px, верхний и нижний отступы по 0px */;
+}
+.search {
+    width: 500px;
+    font-size:14pt;
+    margin-left: 50px;
+    padding: 0 10px;
+}
+.search-res {
+    width: 500px;
+    font-size: 14pt;
+    margin-left: 80px;
+    padding: 0 5px;
+}
+
+.catalog__flex {
+    display: flex /* по умолчанию дочерние блоки(.catalog__col) будут располагаться в ряд */;
+    flex-wrap: wrap /* дочерние блоки переносятся на следующую строку, если ширина всех внутренних блоков превышает ширину родительского блока(.catalog__flex) */;
+    margin: 0 -15px -30px /* Отрицательные внешние отступы(значения противоположные значениям padding блока .catalog__col), чтобы компенсировать внутренние отступы дочерних блоков(.catalog__col), НЕ ДОЛЖЕН превышать боковых значений padding блока .container*/;
+}
+
+.catalog__col {
+    width: 20% /* Задаем ширину блока(по 4 блока в ряд)*/;
+    padding: 0 15px 30px /* Размер внутренних отступов блока - справа и слева по 15px(которые дают общий отступ 30px между блоками) и снизу отступ 30px */;
+}
+
+.product {
+    background: #C3BFF0;
+    height: 600px;
+    width: 200px;
+    padding: 50px;
+    margin: 50px;
+}
+
+    .product img {
+        width: 150px;
+        height: 205px;
+        padding: 30px;
+    }
+
+    .product .name_bouqet {
+        font-weight: bold;
+        font-style: oblique;
+    }
+
+.price {
+    background: #add6ff;
+    width: 100px;
+    padding: 5px;
+}
+
+.zoomer {
+    background-position: 50% 50%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: zoom-in;
+}
+
+    .zoomer img:hover {
+        /* скрываем начальное изображение при наведении курсора на блок */
+        opacity: 0;
+    }
+
+    .zoomer img {
+        transition: opacity .5s;
+        display: block;
+        width: 100%;
+    }
+
+.form-popup {
+    display: none;
+    content: '';
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding-top:100px;
+    margin: auto;
+}
+
+.form-container {
+    max-width: 800px;
+    padding: 10px;
+    background-color: white;
+    margin: auto;
+    z-index: 20;
+    box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+}
+
+    .form-container input[type=text], .form-container input[type=number], .form-container select {
+        width: 775px;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+    }
+
+        .form-container input[type=text]:focus, .form-container input[type=number]:focus, .form-container select:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+    .form-container .btn {
+        background-color: #a496f2;
+        color: black;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        opacity: 0.8;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .form-container .cancel {
+        background-color: #cbc3f7;
+    }
+
+    .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+    }
+
+
+.form-fade {
+    content: '';
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
